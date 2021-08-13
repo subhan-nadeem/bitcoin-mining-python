@@ -6,7 +6,7 @@ def get_sha_256_hash(input_value):
 
 
 def block_hash_less_than_target(block_hash, given_target):
-    return int(block_hash, 16) < int(given_target, 16)
+    return '0x' + block_hash < given_target
 
 
 # Initial block data (the transactions' merkle tree root, timestamp, client version, hash of the previous block)
